@@ -1,0 +1,35 @@
+﻿<Window x:Class="NewYerCauntDown.ThemeManager"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NewYerCauntDown"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="New Yer Cauntdown - Theme Manager" Height="450" Width="800"
+        Icon="/chillin.ico">
+    <Grid>
+        <GroupBox Header="fore/background" Margin="10,10,547,234" />
+        <Rectangle HorizontalAlignment="Left" Height="158" Margin="21,31,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+        <TextBlock HorizontalAlignment="Left" Margin="41,41,0,0" TextWrapping="Wrap" Text="foreground" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="36,74,0,0" TextWrapping="Wrap" Text="R" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="36,115,0,0" TextWrapping="Wrap" Text="B" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="35,95,0,0" TextWrapping="Wrap" Text="G" VerticalAlignment="Top"/>
+        <Rectangle Name="fgPreviewRect" HorizontalAlignment="Left" Height="31" Margin="32,148,0,0" Stroke="Black" Fill="Black"  VerticalAlignment="Top" Width="80"/>
+        <Rectangle HorizontalAlignment="Left" Height="158" Margin="138,31,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+        <TextBlock HorizontalAlignment="Left" Margin="158,41,0,0" TextWrapping="Wrap" Text="background" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="153,74,0,0" TextWrapping="Wrap" Text="R" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="153,115,0,0" TextWrapping="Wrap" Text="B" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="152,95,0,0" TextWrapping="Wrap" Text="G" VerticalAlignment="Top"/>
+        <Rectangle Name="bgPreviewRect" HorizontalAlignment="Left" Height="31" Margin="149,148,0,0" Stroke="Black" Fill="Black"  VerticalAlignment="Top" Width="80"/>
+        <xctk:IntegerUpDown Name="fgB" Minimum="0" Maximum="255"  HorizontalAlignment="Left" Margin="48,115,0,0" Text="0" VerticalAlignment="Top" Width="64" Height="17"/>
+        <Button Content="Ok" HorizontalAlignment="Left" Margin="685,373,0,0" VerticalAlignment="Top" Height="28" Width="83" Click="Button_Click" RenderTransformOrigin="0.181,0.537"/>
+        <Button Content="Import..." Click="Import_Click" HorizontalAlignment="Left" Margin="10,373,0,0" VerticalAlignment="Top" Height="28" Width="83"/>
+        <Button Content="Export..." Click="Export_Click" HorizontalAlignment="Left" Margin="105,373,0,0" VerticalAlignment="Top" Height="28" Width="83"/>
+        <xctk:IntegerUpDown x:Name="fgG" Minimum="0" Maximum="255"  HorizontalAlignment="Left" Margin="48,94,0,0" Text="0" VerticalAlignment="Top" Width="64" Height="17"/>
+        <xctk:IntegerUpDown x:Name="fgR" Minimum="0" Maximum="255"  HorizontalAlignment="Left" Margin="48,73,0,0" Text="0" VerticalAlignment="Top" Width="64" Height="17"/>
+        <xctk:IntegerUpDown x:Name="bgB" Minimum="0" Maximum="255"  HorizontalAlignment="Left" Margin="165,115,0,0" Text="0" VerticalAlignment="Top" Width="64" Height="17"/>
+        <xctk:IntegerUpDown x:Name="bgG" Minimum="0" Maximum="255"  HorizontalAlignment="Left" Margin="165,94,0,0" Text="0" VerticalAlignment="Top" Width="64" Height="17"/>
+        <xctk:IntegerUpDown x:Name="bgR" Minimum="0" Maximum="255"  HorizontalAlignment="Left" Margin="165,73,0,0" Text="0" VerticalAlignment="Top" Width="64" Height="17"/>
+    </Grid>
+</Window>
