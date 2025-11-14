@@ -24,7 +24,8 @@
         <Grid Grid.Row="1" x:Name="CountdownGrid">
             <Viewbox>
                 <TextBlock Name="CountdownText" Text="365d 00:00:00"
-                       HorizontalAlignment="Center" VerticalAlignment="Center" />
+                       HorizontalAlignment="Center" VerticalAlignment="Center"
+                       FontFamily="Arial" />
             </Viewbox>
         </Grid>
     </Grid>

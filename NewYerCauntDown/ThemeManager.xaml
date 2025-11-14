@@ -7,9 +7,9 @@
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d"
         Title="New Yer Cauntdown - Theme Manager" Height="450" Width="800"
-        Icon="/chillin.ico">
+        Icon="/chillin.ico"
+        ResizeMode="CanMinimize">
     <Grid>
-        <GroupBox Header="fore/background" Margin="10,10,547,234" />
         <Rectangle HorizontalAlignment="Left" Height="158" Margin="21,31,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
         <TextBlock HorizontalAlignment="Left" Margin="41,41,0,0" TextWrapping="Wrap" Text="foreground" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="36,74,0,0" TextWrapping="Wrap" Text="R" VerticalAlignment="Top"/>
@@ -31,5 +31,8 @@
         <xctk:IntegerUpDown x:Name="bgB" Minimum="0" Maximum="255"  HorizontalAlignment="Left" Margin="165,115,0,0" Text="0" VerticalAlignment="Top" Width="64" Height="17"/>
         <xctk:IntegerUpDown x:Name="bgG" Minimum="0" Maximum="255"  HorizontalAlignment="Left" Margin="165,94,0,0" Text="0" VerticalAlignment="Top" Width="64" Height="17"/>
         <xctk:IntegerUpDown x:Name="bgR" Minimum="0" Maximum="255"  HorizontalAlignment="Left" Margin="165,73,0,0" Text="0" VerticalAlignment="Top" Width="64" Height="17"/>
+        <Rectangle HorizontalAlignment="Left" Height="45" Margin="251,31,0,0" Stroke="Black" VerticalAlignment="Top" Width="215"/>
+        <Label Content="font:" HorizontalAlignment="Left" Margin="260,41,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="fontList" HorizontalAlignment="Left" Margin="307,45,0,0" VerticalAlignment="Top" Width="147"/>
     </Grid>
 </Window>
